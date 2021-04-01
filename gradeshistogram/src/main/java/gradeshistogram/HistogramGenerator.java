@@ -13,9 +13,8 @@ import java.util.ArrayList;
 
 
 /**
- * This Chart program generator reads a text file inputed as a cmd argument and
+ * This program reads a text file inputed as a cmd argument and
  * creates a histogram for the counts of values in that file
- * 
  * @author stef4k
  * @version 1.0
  * @since 2021-04-01
@@ -79,7 +78,7 @@ public class HistogramGenerator {
 
 	/**
 	 * Method that reads a file, line by line and 
-	 * creates an ArrayList of integers with all the integers found 
+	 * creates an ArrayList of integers with all the integers found in the file
 	 * @param readFromFile
 	 * @return ArrayList<Integer>
 	 */
