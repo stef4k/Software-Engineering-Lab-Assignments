@@ -130,12 +130,12 @@ public class HistogramGenerator {
 		// if made connection to file, read from file
 		System.out.print("Reading from file \"" + args[0] + "\":\n");
 		
-		// calling method readfile() to read integers and create an ArrayList
+		// call method readfile() to read integers and create an ArrayList
 		dataValues = readfile(readFromFile);
 
-		// creating a new instance of HistogramGenerator
+		// create a new instance of HistogramGenerator
 		HistogramGenerator demo = new HistogramGenerator();
-		// designing a new histogram for the ArrayList created
+		// design a new histogram for the ArrayList created
 		demo.generateChart(dataValues);
 	}
 
