@@ -4,10 +4,9 @@ Lab Assignments for the uni course Applied Software Engineering of the 4th year 
 
 ## Purposes
 - Get familiar with using git, github and a java library
-- Use Maven to package your application and the aforementioned library
-into a standalone executable.
+- Use Maven to package your application and the aforementioned library into a standalone executable.
 
-##Building
+## Building
 1. __Fork__ the repository.
 
 2. __Clone__ the forked repository.
@@ -20,11 +19,11 @@ into a standalone executable.
 ***Important:*** In order to execute any Maven command, you will need to be in a directory with a pom.xml file.
 
 
-##Built with
+## Built with
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [Eclipse](https://www.eclipse.org/) - IDE for Java
 
-##Author
+## Author
 * [Stefanos Kypritidis](https://github.com/stef4k)
 
 ## License
