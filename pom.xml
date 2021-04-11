@@ -1,12 +1,22 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>gr.aueb.dmst.stefanos_kypritidis</groupId>
-  <artifactId>ase2021_practical_assignments</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  <name>Software Engineering Lab Assignments</name>
-  <description>This is a project that contains all the practical lab assignments for the course Applied Software Engineering of DMST</description>
-  <modules>
-  	<module>gradeshistogram</module>
-  </modules>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>gr.aueb.dmst.stefanos_kypritidis</groupId>
+	<artifactId>ase2021_practical_assignments</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	
+	<name>Software Engineering Lab Assignments</name>
+	<description>This is a project that contains all the practical lab assignments for the course Applied Software Engineering of DMST</description>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+	
+	<modules>
+		<module>gradeshistogram</module>
+	</modules>
 </project>
