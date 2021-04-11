@@ -6,6 +6,10 @@ Lab Assignments for the uni course Applied Software Engineering of the 4th year 
 - Get familiar with using git, github and a java library
 - Use Maven to package your application and the aforementioned library into a standalone executable.
 
+## Prerequisites
+* Version 1.8 of JDK
+* IDE installed, e.g. eclipse
+
 ## Building
 1. __Fork__ the repository.
 
