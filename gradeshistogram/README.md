@@ -4,7 +4,7 @@ The executable .jar takes a path as a parameter and creates a histogram of the g
 ### Prerequisites
 1. A text file that strictly contains one grade in every line.
 
-After you have implemented the [building of the project](https://github.com/stef4k/Software-Engineering-Lab-Assignments/blob/development/README.md) (Building section)
+In order to create the grades histogram, you must have firstly implemented the [building of the project](https://github.com/stef4k/Software-Engineering-Lab-Assignments/blob/development/README.md) (Building section)
 
 ## Histogram Creation
 The produced jar is located in the target directory and can be executed as following:
