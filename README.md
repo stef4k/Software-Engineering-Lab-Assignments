@@ -9,6 +9,7 @@ Lab Assignments for the uni course Applied Software Engineering of the 4th year 
 ## Prerequisites
 * Version 1.8 of JDK
 * IDE installed, e.g. eclipse
+* Maven (how to install [Maven](https://mkyong.com/maven/how-to-install-maven-in-windows/))
 
 ## Building
 1. __Fork__ the repository.
@@ -16,9 +17,7 @@ Lab Assignments for the uni course Applied Software Engineering of the 4th year 
 2. __Clone__ the forked repository.
  `git clone <url>`, where _url_ is the url of your forked repository.
 
-4. If you have Maven set up, do the step below. If you have not, first install [maven](https://mkyong.com/maven/how-to-install-maven-in-windows/).
-
-   __Execute__ `mvn install`
+3. __Execute__ `mvn install`
 
 ***Important:*** In order to execute any Maven command, you will need to be in a directory with a pom.xml file.
 
