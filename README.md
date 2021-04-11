@@ -27,6 +27,6 @@ Lab Assignments for the uni course Applied Software Engineering of the 4th year 
 * [Stefanos Kypritidis](https://github.com/stef4k)
 
 ## License
-This project runs under the MIT License
+This project runs under the [MIT License](https://github.com/stef4k/Software-Engineering-Lab-Assignments/blob/development/LICENSE)
 
 
