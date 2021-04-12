@@ -1,14 +1,16 @@
-# Compiled class file
-*.class
+# IDE-specific files and directories
+.project
+.settings/
+.classpath
+
+# Maven output files and directories
+target/
+test/
+resources/
+src/site/
 
 # Log file
 *.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
 
 # Package Files #
 *.jar
