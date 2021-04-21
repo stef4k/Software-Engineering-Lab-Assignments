@@ -5,9 +5,11 @@
 
 # Maven output files and directories
 target/
-test/
 resources/
 src/site/
+
+# Maven test classes for gradeshistogram
+gradeshistogram/src/test/
 
 # Log file
 *.log
