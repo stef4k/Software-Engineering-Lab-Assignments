@@ -11,12 +11,11 @@ package math;
 public class MyMath {
 
 	/**
-	 * Performs the basic arithmetic operation of division.
+	 * Performs the basic operation of factorial.
 	 * 
-	 * @param numerator   the numerator of the operation
-	 * @param denominator the denominator of the operation
-	 * @return the result of the division between numerator and denominator
-	 * @exception ArithmeticException when denominator is zero
+	 * @param n   the number whose factorial will be calculated
+	 * @return the factorial of @param n
+	 * @exception IllegalArgumentException when @param n is less than 0 or more than 12
 	 */
 	public int factorial(int n) {
 		if (n < 0 || n > 12)
