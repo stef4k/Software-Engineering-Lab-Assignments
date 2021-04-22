@@ -1,6 +1,6 @@
 # Unit Testing Assignment
 
-This module contains various unit tests for classes with arithmetic functions like factorial, divide, multiply etc
+This module contains various unit tests for classes with arithmetic functions like factorial, divide, multiply etc. The assignment description can be found [here](https://edu.dmst.aueb.gr/pluginfile.php/19733/mod_resource/content/1/Lab-Assignment-3.pdf).
 
 ### Prerequisites
 In order to runt the unit tests, you must have firstly implemented the [building of the project](https://github.com/stef4k/Software-Engineering-Lab-Assignments/blob/development/README.md) (Building section)
