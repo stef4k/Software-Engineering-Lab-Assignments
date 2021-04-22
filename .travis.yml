@@ -8,14 +8,6 @@ branches: # Execute job only on specific branch commits
  - main
  - development
  
-sudo: required # Linux administrator permissions
-
-before_install:
- - sudo apt update # Update the package list
- 
-install:
- - sudo apt install maven –y # Install required packages
- 
 before_script: # Run commands
  - ls -la
  
