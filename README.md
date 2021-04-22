@@ -1,9 +1,9 @@
 # Software-Engineering-Lab-Assignments
 [![Build Status](https://travis-ci.com/stef4k/Software-Engineering-Lab-Assignments.svg?token=pzCJyJVszWoX8cqVKtdc&branch=development)](https://travis-ci.com/github/stef4k/Software-Engineering-Lab-Assignments)
 
-Lab Assignments for the uni course Applied Software Engineering of the 4th year spring semester. The descriptions are the following:
-* [Assignment on Build Automation Tools](https://edu.dmst.aueb.gr/pluginfile.php/19415/mod_resource/content/1/Lab-Assignment-2.pdf)
-* [Assignment on Unit Testing & Continuous Integration](https://edu.dmst.aueb.gr/pluginfile.php/19733/mod_resource/content/1/Lab-Assignment-3.pdf)
+Lab Assignments for the uni course Applied Software Engineering of the 4th year spring semester. In detail, more information about the assignments:
+* [Assignment on Build Automation Tools](https://github.com/stef4k/Software-Engineering-Lab-Assignments/blob/development/gradeshistogram/README.md)
+* [Assignment on Unit Testing & Continuous Integration](https://github.com/stef4k/Software-Engineering-Lab-Assignments/tree/development/unittesting)
 
 ## Purposes
 - Get familiar with using git, github and a java library
