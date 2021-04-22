@@ -1,5 +1,5 @@
 # Grades Histogram
-The executable .jar takes a path as a parameter and creates a histogram of the grades of the path's file.
+The assignment description can be found [here](https://edu.dmst.aueb.gr/pluginfile.php/19415/mod_resource/content/1/Lab-Assignment-2.pdf). In detail, the executable .jar takes a path as a parameter and creates a histogram of the grades of the path's file.
 
 ### Prerequisites
 1. A text file that strictly contains one grade in every line.
