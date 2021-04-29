@@ -18,10 +18,11 @@
 
 	<build>
 		<plugins>
+			<!-- required for code coverage reporting -->
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>0.8.6</version>
+				<version>0.8.3</version>
 				<executions>
 					<execution>
 						<id>prepare-agent</id>
@@ -38,4 +39,5 @@
 		<module>gradeshistogram</module>
 		<module>unittesting</module>
 	</modules>
+
 </project>
