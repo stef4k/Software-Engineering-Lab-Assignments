@@ -1,8 +1,8 @@
 package math;
 
 /**
- * MyMath provides simple arithmetic factorial operations that serve as hands-on
- * practice on Unit Testing.
+ * MyMath provides simple arithmetic operations that serve as hands-on practice
+ * on Unit Testing.
  *
  * @author stef4k
  * @version 1.0
@@ -33,4 +33,22 @@ public class MyMath {
 		return fact;
 	}
 
+	/**
+	 * Method that checks if a number is prime or not. Returns true, if the inputed number is prime.
+	 * 
+	 * @param n the number which will be checked
+	 * @return true or false
+	 */
+	public boolean isPrime(int n) {
+		//Throws IllegalArgumentException for numbers less than 2
+		if (n < 2) {
+			throw new IllegalArgumentException("Number has to larger than 1");
+		}
+		for (int i = 2; i <= n / 2; i++) {
+			if ((n % i) == 0) {
+				return false;
+			}
+		}
+		return true;
+	}
 }
