@@ -8,10 +8,6 @@ branches: # Execute job only on specific branch commits
  - main
  - development
  
- env:
-  global:
-    - CODECOV_TOKEN=5c624de2-e7c6-4534-9506-9b83e7190d9b
- 
 before_script: # Run commands
  - ls -la
  
@@ -19,5 +15,5 @@ script: # Build the project
  - mvn clean package jacoco:report cobertura:cobertura
  
 after_success: # Notify users about the result
- - bash <(curl -s https://codecov.io/bash) -t 5c624de2-e7c6-4534-9506-9b83e7190d9b
+ - bash <(curl -s https://codecov.io/bash) -t a662293a-7fdf-4a65-b6e3-dbbfcbca7200
  - echo “Process terminated successfully”
