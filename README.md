@@ -1,5 +1,6 @@
 # Software-Engineering-Lab-Assignments
 [![Build Status](https://travis-ci.com/stef4k/Software-Engineering-Lab-Assignments.svg?token=pzCJyJVszWoX8cqVKtdc&branch=development)](https://travis-ci.com/github/stef4k/Software-Engineering-Lab-Assignments)
+[![codecov](https://codecov.io/gh/stef4k/Software-Engineering-Lab-Assignments/branch/main/graph/badge.svg?token=3PQNBZ1S1D)](https://codecov.io/gh/stef4k/Software-Engineering-Lab-Assignments)
 
 Lab Assignments for the uni course Applied Software Engineering of the 4th year spring semester. In detail, more information about the assignments:
 * [Assignment on Build Automation Tools](https://github.com/stef4k/Software-Engineering-Lab-Assignments/tree/development/gradeshistogram)
