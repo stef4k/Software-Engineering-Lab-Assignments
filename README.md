@@ -31,6 +31,7 @@ Lab Assignments for the uni course Applied Software Engineering of the 4th year 
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [Eclipse](https://www.eclipse.org/) - IDE for Java
 * [Travic CI](https://travis-ci.com/) - Continuous Integration Tool
+* [Codecov](https://about.codecov.io/) - Code Coverage Reporting
 
 ## Author
 * [Stefanos Kypritidis](https://github.com/stef4k)
