@@ -12,7 +12,7 @@ before_script: # Run commands
  - ls -la
  
 script: # Build the project
- - mvn clean package jacoco:report coveralls:report cobertura:cobertura
+ - mvn clean package jacoco:report cobertura:cobertura
  
 after_success: # Notify users about the result
  - echo “Process terminated successfully”
