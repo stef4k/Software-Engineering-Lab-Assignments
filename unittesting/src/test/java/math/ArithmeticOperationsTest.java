@@ -61,6 +61,13 @@ public class ArithmeticOperationsTest {
 	}
 	
 	@Test
+	public void test_multiply_both_negative_rule_exception() {
+		thrown.expect(IllegalArgumentException.class);
+		thrown.expectMessage("x & y should be >= 0");
+		ar_oper.multiply(-50, -1);
+	}
+	
+	@Test
 	public void test_multiply_nofit_rule_exception() {
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("The product does not fit in an Integer variable");

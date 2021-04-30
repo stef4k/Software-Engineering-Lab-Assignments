@@ -45,8 +45,6 @@ public class FileIO {
 					numbersList.add(number);
 				} catch (NumberFormatException e) {
 					continue;
-				} catch (IndexOutOfBoundsException e) {
-					continue;
 				}
 			}
 		} catch (IOException e) {
