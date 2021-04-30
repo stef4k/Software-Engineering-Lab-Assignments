@@ -5,7 +5,6 @@
 
 # Maven output files and directories
 target/
-resources/
 src/site/
 
 # Maven test classes for gradeshistogram
