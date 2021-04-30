@@ -16,3 +16,4 @@ script: # Build the project
  
 after_success: # Notify users about the result
  - echo “Process terminated successfully”
+ - bash <(curl -s https://codecov.io/bash) -t 5c624de2-e7c6-4534-9506-9b83e7190d9b
