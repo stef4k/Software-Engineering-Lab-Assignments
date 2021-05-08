@@ -46,8 +46,18 @@ public class ArithmeticOperationsTest {
 	}
 	
 	@Test
-	public void test_multiply_zero() {
-		Assert.assertEquals(0 , ar_oper.multiply(0, 3), 0);
+	public void test_multiply_both_zero() {
+		Assert.assertEquals(0 , ar_oper.multiply(0, 0), 0);
+	}
+	
+	@Test
+	public void test_multiply_first_zero() {
+		Assert.assertEquals(0 , ar_oper.multiply(0, 10), 0);
+	}
+	
+	@Test
+	public void test_multiply_second_zero() {
+		Assert.assertEquals(0 , ar_oper.multiply(58, 0), 0);
 	}
 	
 	@Rule
@@ -64,7 +74,7 @@ public class ArithmeticOperationsTest {
 	public void test_multiply_both_negative_rule_exception() {
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("x & y should be >= 0");
-		ar_oper.multiply(-50, -1);
+		ar_oper.multiply(-500, -1);
 	}
 	
 	@Test
@@ -72,12 +82,6 @@ public class ArithmeticOperationsTest {
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("The product does not fit in an Integer variable");
 		ar_oper.multiply(999999999, 999999999);
-	}
-	
-	@Test
-	public void test_multiply_zero_secondnum() {
-		thrown.expect(ArithmeticException.class);
-		ar_oper.multiply(1, 0);
 	}
 	
 }
