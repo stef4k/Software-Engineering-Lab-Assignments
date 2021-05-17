@@ -138,5 +138,4 @@ public class HistogramGenerator {
 		// design a new histogram for the ArrayList created
 		demo.generateChart(dataValues);
 	}
-
 }

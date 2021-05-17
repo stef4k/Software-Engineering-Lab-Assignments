@@ -1,0 +1,19 @@
+language: java # Define the language
+
+jdk: # Define the execution environments
+ - openjdk8
+ 
+branches: # Execute job only on specific branch commits
+ only:
+ - main
+ - development
+ 
+before_script: # Run commands
+ - ls -la
+ 
+script: # Build the project
+ - mvn clean package jacoco:report cobertura:cobertura
+ 
+after_success: # Notify users about the result
+ - bash <(curl -s https://codecov.io/bash) -t a662293a-7fdf-4a65-b6e3-dbbfcbca7200
+ - echo “Process terminated successfully”

@@ -1,10 +1,15 @@
 # Software-Engineering-Lab-Assignments
-Lab Assignments for the uni course Applied Software Engineering of the 4th year spring semester. The descriptions are the following:
-* [Assignment on Build Automation Tools](https://edu.dmst.aueb.gr/pluginfile.php/19415/mod_resource/content/1/Lab-Assignment-2.pdf)
+[![Build Status](https://travis-ci.com/stef4k/Software-Engineering-Lab-Assignments.svg?token=pzCJyJVszWoX8cqVKtdc&branch=development)](https://travis-ci.com/github/stef4k/Software-Engineering-Lab-Assignments)
+[![codecov](https://codecov.io/gh/stef4k/Software-Engineering-Lab-Assignments/branch/development/graph/badge.svg?token=NEHRPAG0BE)](https://codecov.io/gh/stef4k/Software-Engineering-Lab-Assignments)
+
+Lab Assignments for the uni course Applied Software Engineering of the 4th year spring semester. In detail, more information about the assignments:
+* [Assignment on Build Automation Tools](https://github.com/stef4k/Software-Engineering-Lab-Assignments/tree/development/gradeshistogram)
+* [Assignment on Unit Testing & Continuous Integration](https://github.com/stef4k/Software-Engineering-Lab-Assignments/tree/development/unittesting)
 
 ## Purposes
 - Get familiar with using git, github and a java library
-- Use Maven to package your application and the aforementioned library into a standalone executable.
+- Use Maven to package your application and the aforementioned library into a standalone executable
+- Learn how to execute unit testing and implement continuous integration with Travis
 
 ## Prerequisites
 * Version 1.8 of JDK
@@ -25,6 +30,8 @@ Lab Assignments for the uni course Applied Software Engineering of the 4th year 
 ## Built with
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [Eclipse](https://www.eclipse.org/) - IDE for Java
+* [Travic CI](https://travis-ci.com/) - Continuous Integration Tool
+* [Codecov](https://about.codecov.io/) - Code Coverage Reporting
 
 ## Author
 * [Stefanos Kypritidis](https://github.com/stef4k)
