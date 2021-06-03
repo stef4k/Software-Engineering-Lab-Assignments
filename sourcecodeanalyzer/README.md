@@ -1,3 +1,9 @@
+# Design Patterns Assignment
+
+This module contains the redesign of a system based on the SOLID design principles by applying the appropriate design patterns. The assignment description can be found [here](https://edu.dmst.aueb.gr/pluginfile.php/19938/mod_resource/content/1/Lab-Assignment-4.pdf).
+
+## Running the system
+
 1. Build the executable Java application with: 
 	mvn package jacoco:report
 
@@ -11,3 +17,7 @@ were args translate to:
 	arg4 = “OutputFileType” [csv|json]
 example: 
 	java –jar ./target/sourcecodeanalyzer-0.0.1-SNAPSHOT-jar-with-dependencies.jar ./src/test/resources/TestClass.java regex local metrics_results csv
+	
+## System Class Diagram
+
+<img src="media/UMLDiagram.png" width="1200"/>
