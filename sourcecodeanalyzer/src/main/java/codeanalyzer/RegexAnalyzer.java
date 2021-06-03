@@ -11,7 +11,7 @@ public class RegexAnalyzer extends SourceCodeAnalyzer {
 	}
 
 	@Override
-	public int calculateLOC(String filepath, String analyzerType) throws IOException {
+	public int calculateLOC(String filepath) throws IOException {
 		String sourceCode = getFileReader().readFileIntoString(filepath);
 		Pattern pattern = Pattern.compile("((//.*)|(/\\*.*)|(\\*+.*))");
 		Matcher nonCodeLinesMatcher = pattern.matcher(sourceCode);
@@ -28,7 +28,7 @@ public class RegexAnalyzer extends SourceCodeAnalyzer {
 	}
 
 	@Override
-	public int calculateNOM(String filepath, String analyzerType) throws IOException {
+	public int calculateNOM(String filepath) throws IOException {
 		String sourceCode = getFileReader().readFileIntoString(filepath);
 		Pattern pattern = Pattern.compile(
 				".*(public |protected |private |static )?[\\w\\<\\>\\[\\]]+\\s+(\\w+) *\\([^\\)]*\\) *(\\{?|[^;]).*");
@@ -42,15 +42,15 @@ public class RegexAnalyzer extends SourceCodeAnalyzer {
 	}
 
 	@Override
-	public int calculateNOC(String filepath, String analyzerType) throws IOException {
+	public int calculateNOC(String filepath) throws IOException {
 		String sourceCode = getFileReader().readFileIntoString(filepath);
-		Pattern pattern = Pattern.compile(".*\\s*class\\s+.*"); 
-        Matcher classSignatures = pattern.matcher(sourceCode);
+		Pattern pattern = Pattern.compile(".*\\s*class\\s+.*");
+		Matcher classSignatures = pattern.matcher(sourceCode);
 
-        int classCounter = 0;
-        while (classSignatures.find()) {
-        	classCounter++;
-        }
+		int classCounter = 0;
+		while (classSignatures.find()) {
+			classCounter++;
+		}
 		return classCounter;
 	}
 

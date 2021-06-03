@@ -10,7 +10,7 @@ public class StrcompAnalyzer extends SourceCodeAnalyzer {
 	}
 
 	@Override
-	public int calculateLOC(String filepath, String analyzerType) throws IOException {
+	public int calculateLOC(String filepath) throws IOException {
 		List<String> sourceCodeList = getFileReader().readFileIntoList(filepath);
 		int nonCodeLinesCounter = 0;
 		for (String line : sourceCodeList) {
@@ -24,7 +24,7 @@ public class StrcompAnalyzer extends SourceCodeAnalyzer {
 	}
 
 	@Override
-	public int calculateNOM(String filepath, String analyzerType) throws IOException {
+	public int calculateNOM(String filepath) throws IOException {
 		List<String> sourceCodeList = getFileReader().readFileIntoList(filepath);
 		int methodCounter = 0;
 		for (String line : sourceCodeList) {
@@ -38,7 +38,7 @@ public class StrcompAnalyzer extends SourceCodeAnalyzer {
 	}
 
 	@Override
-	public int calculateNOC(String filepath, String analyzerType) throws IOException {
+	public int calculateNOC(String filepath) throws IOException {
 		List<String> sourceCodeList = getFileReader().readFileIntoList(filepath);
 		int classCounter = 0;
 		for (String line : sourceCodeList) {

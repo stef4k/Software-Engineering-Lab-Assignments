@@ -23,10 +23,10 @@ public abstract class SourceCodeAnalyzer {
 		return fileReader;
 	}
 
-	public abstract int calculateLOC(String filepath, String analyzerType) throws IOException;
+	public abstract int calculateLOC(String filepath) throws IOException;
 
-	public abstract int calculateNOM(String filepath, String analyzerType) throws IOException;
+	public abstract int calculateNOM(String filepath) throws IOException;
 
-	public abstract int calculateNOC(String filepath, String analyzerType) throws IOException;
+	public abstract int calculateNOC(String filepath) throws IOException;
 
 }

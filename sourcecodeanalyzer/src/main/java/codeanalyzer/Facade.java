@@ -9,23 +9,9 @@ public class Facade {
 	public void execute_metrics(String filepath, String sourceCodeAnalyzerType, String sourceFileLocation,
 			String outputFilePath, String outputFileType) throws IOException {
 		
-		SourceCodeAnalyzer analyzer;
-		if (sourceCodeAnalyzerType == "regex") {
-			analyzer = new RegexAnalyzer(sourceFileLocation);
-		} else if (sourceCodeAnalyzerType == "strcomp") {
-			analyzer = new StrcompAnalyzer(sourceFileLocation);
-		}else {
-			analyzer = new NullAnalyzer(sourceFileLocation);
-		}
-		
-		int loc = analyzer.calculateLOC(filepath, sourceCodeAnalyzerType);
-		int nom = analyzer.calculateNOM(filepath, sourceCodeAnalyzerType);
-		int noc = analyzer.calculateNOC(filepath, sourceCodeAnalyzerType);
-
+		FactoryAnalyzer analyze = new FactoryAnalyzer();
 		Map<String, Integer> metrics = new HashMap<>();
-		metrics.put("loc", loc);
-		metrics.put("nom", nom);
-		metrics.put("noc", noc);
+		metrics = analyze.codeAnalyze(filepath,sourceCodeAnalyzerType, sourceFileLocation);
 
 		if (outputFileType == "csv") {
 			CsvExporter exporter = new CsvExporter();
@@ -33,6 +19,8 @@ public class Facade {
 		} else if (outputFileType == "json") {
 			JsonExporter exporter = new JsonExporter();
 			exporter.writeFile(metrics, outputFilePath);
+		}else {
+			throw new IllegalArgumentException("Unknown output file type " + outputFileType);
 		}
 	}
 }
