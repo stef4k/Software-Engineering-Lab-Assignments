@@ -17,7 +17,3 @@ script: # Build the project
 after_success: # Notify users about the result
  - bash <(curl -s https://codecov.io/bash) -t a662293a-7fdf-4a65-b6e3-dbbfcbca7200
  - echo “Process terminated successfully”
-
-script:
- - cd gradeshistogram/target/
- - java -jar sourcecodeanalyzer-0.0.1-SNAPSHOT-jar-with-dependencies.jar ../src/test/resources/TestClass.java regex local ./output_file csv
