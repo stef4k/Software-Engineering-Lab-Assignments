@@ -42,7 +42,7 @@ The strategy pattern was used twice with the creation of the interfaces and thei
 ## Bridge Pattern
 
 The bridge pattern was used between the abstract class `SourceCodeAnalyzer`, its subclasses `RegexAnalyzer` and `StrcompAnalyzer`, the interface `SourceFileReader`and its subclasses and the class `FactoryAnalyzer`. One of the most important roles has the `SourceCodeAnalyzer` abstract class that basically connects the `FactoryAnalyzer`with the `SourceFileReader` interface and acts as a bridge. The benefits of this pattern is that different subclasses of `SourceCodeAnalyzer` and `SourceFileReader` can vary independently. In fact, adding new types of source file readers does not affect the source code analyzers and adding new code analyzers requires minimal changes in the
-source file readers hierarchy (just the corresponding methods). Also, the single responsibility princliple is implemented in all those classes now. However, the overall complexity of the system might have increased but that is a fair trade-off.
+source file readers hierarchy. Also, the single responsibility princliple is implemented in all those classes now. However, the overall complexity of the system might have increased but that is a fair trade-off.
 
 ## Factory Pattern 
 
