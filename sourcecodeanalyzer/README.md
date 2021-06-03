@@ -24,6 +24,11 @@ This module contains the redesign of a system based on the SOLID design principl
 
 	`java –jar ./target/sourcecodeanalyzer-0.0.1-SNAPSHOT-jar-with-dependencies.jar ./src/test/resources/TestClass.java regex local metrics_results csv`
 	
+## Running tests
+
+* __Run tests__ `mvn test`
+* __Run tests and produce jacoco report__ `mvn test jacoco:report`
+
 ## System Class Diagram
 
 <img src="media/UMLDiagram.png" width="1200"/>
