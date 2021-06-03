@@ -13,10 +13,10 @@ public class Facade {
 		Map<String, Integer> metrics = new HashMap<>();
 		metrics = analyze.codeAnalyze(filepath,sourceCodeAnalyzerType, sourceFileLocation);
 
-		if (outputFileType == "csv") {
+		if (outputFileType.equals("csv")) {
 			CsvExporter exporter = new CsvExporter();
 			exporter.writeFile(metrics, outputFilePath);
-		} else if (outputFileType == "json") {
+		} else if (outputFileType.equals("json")) {
 			JsonExporter exporter = new JsonExporter();
 			exporter.writeFile(metrics, outputFilePath);
 		}else {

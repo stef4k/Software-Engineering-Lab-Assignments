@@ -9,9 +9,9 @@ public abstract class SourceCodeAnalyzer {
 	}
 	
 	public SourceCodeAnalyzer(String type) {
-		if (type == "web") {
+		if (type.equals("web")) {
 			fileReader = new WebFileReader();
-		} else if (type == "local") {
+		} else if (type.equals("local")) {
 			fileReader = new LocalFileReader();
 		} else {
 			fileReader = null;

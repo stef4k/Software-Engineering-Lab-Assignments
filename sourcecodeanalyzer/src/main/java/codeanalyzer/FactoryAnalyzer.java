@@ -8,9 +8,9 @@ public class FactoryAnalyzer {
 	public Map<String, Integer> codeAnalyze(String filepath, String sourceCodeAnalyzerType, String sourceFileLocation)
 			throws IOException {
 		SourceCodeAnalyzer analyzer;
-		if (sourceCodeAnalyzerType == "regex") {
+		if (sourceCodeAnalyzerType.equals("regex")) {
 			analyzer = new RegexAnalyzer(sourceFileLocation);
-		} else if (sourceCodeAnalyzerType == "strcomp") {
+		} else if (sourceCodeAnalyzerType.equals("strcomp")) {
 			analyzer = new StrcompAnalyzer(sourceFileLocation);
 		} else {
 			throw new IllegalArgumentException("Unknown analyzer type " + sourceCodeAnalyzerType);
