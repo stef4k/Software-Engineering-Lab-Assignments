@@ -5,8 +5,6 @@ import java.io.IOException;
 public abstract class SourceCodeAnalyzer {
 	private SourceFileReader fileReader;
 
-	public SourceCodeAnalyzer(){
-	}
 	
 	public SourceCodeAnalyzer(String type) {
 		if (type.equals("web")) {
