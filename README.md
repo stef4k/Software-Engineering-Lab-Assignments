@@ -27,6 +27,8 @@ Lab Assignments for the uni course Applied Software Engineering of the 4th year 
  `git clone <url>`, where _url_ is the url of your forked repository.
 
 3. __Execute__ `mvn install`
+4. __Run tests__ `mvn test`
+5. __Run tests and produce jacoco report__ `mvn test jacoco:report`
 
 ***Important:*** In order to execute any Maven command, you will need to be in a directory with a pom.xml file.
 
