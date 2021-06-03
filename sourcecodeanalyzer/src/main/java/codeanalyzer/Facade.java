@@ -17,8 +17,9 @@ public class Facade {
 			CsvExporter exporter = new CsvExporter();
 			exporter.writeFile(metrics, outputFilePath);
 		} else if (outputFileType.equals("json")) {
-			JsonExporter exporter = new JsonExporter();
-			exporter.writeFile(metrics, outputFilePath);
+			//JsonExporter exporter = new JsonExporter();
+			//exporter.writeFile(metrics, outputFilePath);
+			throw new IllegalArgumentException("Json not implemented yet");
 		}else {
 			throw new IllegalArgumentException("Unknown output file type " + outputFileType);
 		}
