@@ -3,8 +3,16 @@ package codeanalyzer;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Analyzes the contents of a Java source code file and calculates the following
+ * metrics: loc = lines of code, nom = number of methods, and noc=number of
+ * classes with the strcomp (with the use of string comparison).
+ * 
+ * @author agkortzis
+ *
+ */
 public class StrcompAnalyzer extends SourceCodeAnalyzer {
-	
+
 	public StrcompAnalyzer(String type) {
 		super(type);
 	}

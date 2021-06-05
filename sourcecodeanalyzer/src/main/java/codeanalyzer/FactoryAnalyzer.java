@@ -4,7 +4,23 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * This class is an interface to refer to all objects of source code analyzer
+ * and to hide extra functionality from the `Facade` class.
+ * 
+ * @author stef4k
+ *
+ */
 public class FactoryAnalyzer {
+	/**
+	 * Calculates all the metrics (LOC,NOM, NOC) calculated with a unique analyzer
+	 * 
+	 * @param filepath
+	 * @param sourceCodeAnalyzerType
+	 * @param sourceFileLocation
+	 * @return
+	 * @throws IOException
+	 */
 	public Map<String, Integer> codeAnalyze(String filepath, String sourceCodeAnalyzerType, String sourceFileLocation)
 			throws IOException {
 		SourceCodeAnalyzer analyzer;

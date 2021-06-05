@@ -5,18 +5,24 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Map;
 
-public class CsvExporter implements MetricsExporter{
+/**
+ * Exports (writes) the metrics to a CSV output.
+ * 
+ * @author stef4k
+ *
+ */
+public class CsvExporter implements MetricsExporter {
 	@Override
 	public void writeFile(Map<String, Integer> metrics, String filepath) {
 		File outputFile = new File(filepath + ".csv");
 		StringBuilder metricsNames = new StringBuilder();
 		StringBuilder metricsValues = new StringBuilder();
-		
+
 		for (Map.Entry<String, Integer> entry : metrics.entrySet()) {
 			metricsNames.append(entry.getKey() + ",");
-			metricsValues.append(entry.getValue()+",");
+			metricsValues.append(entry.getValue() + ",");
 		}
-		
+
 		try {
 			FileWriter writer = new FileWriter(outputFile);
 			writer.append(metricsNames + "\n");
@@ -26,6 +32,6 @@ public class CsvExporter implements MetricsExporter{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
 }

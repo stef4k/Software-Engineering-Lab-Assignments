@@ -2,10 +2,15 @@ package codeanalyzer;
 
 import java.io.IOException;
 
+/**
+ * Abstract classs to analyze the contents of a Java source code file
+ * 
+ * @author stef4k
+ *
+ */
 public abstract class SourceCodeAnalyzer {
 	private SourceFileReader fileReader;
 
-	
 	public SourceCodeAnalyzer(String type) {
 		if (type.equals("web")) {
 			fileReader = new WebFileReader();
@@ -15,7 +20,6 @@ public abstract class SourceCodeAnalyzer {
 			fileReader = null;
 		}
 	}
-	
 
 	public SourceFileReader getFileReader() {
 		return fileReader;

@@ -6,6 +6,13 @@ import codeanalyzer.*;
 
 public class DemoClient {
 
+	/**
+	 * Main method, reads from command line arguments. If no command arguments is
+	 * given then it checks the TestClass with regex analyzer type.
+	 * 
+	 * @param args
+	 * @throws IOException
+	 */
 	public static void main(String[] args) throws IOException {
 		String filepath = "src/main/resources/TestClass.java";
 		String sourceCodeAnalyzerType = "regex";
