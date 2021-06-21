@@ -5,11 +5,15 @@
 Lab Assignments for the uni course Applied Software Engineering of the 4th year spring semester. In detail, more information about the assignments:
 * [Assignment on Build Automation Tools](https://github.com/stef4k/Software-Engineering-Lab-Assignments/tree/development/gradeshistogram)
 * [Assignment on Unit Testing & Continuous Integration](https://github.com/stef4k/Software-Engineering-Lab-Assignments/tree/development/unittesting)
+* [Assignment on Design Patterns](https://github.com/stef4k/Software-Engineering-Lab-Assignments/tree/development/sourcecodeanalyzer)
+
 
 ## Purposes
 - Get familiar with using git, github and a java library
 - Use Maven to package your application and the aforementioned library into a standalone executable
 - Learn how to execute unit testing and implement continuous integration with Travis
+- Learn how to refactor code while using the appropriate design patterns
+- Get familiar with UML diagrams
 
 ## Prerequisites
 * Version 1.8 of JDK
@@ -23,6 +27,8 @@ Lab Assignments for the uni course Applied Software Engineering of the 4th year 
  `git clone <url>`, where _url_ is the url of your forked repository.
 
 3. __Execute__ `mvn install`
+4. __Run tests__ `mvn test`
+5. __Run tests and produce jacoco report__ `mvn test jacoco:report`
 
 ***Important:*** In order to execute any Maven command, you will need to be in a directory with a pom.xml file.
 
